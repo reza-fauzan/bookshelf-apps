@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Aplikasi Bookshelf">
+  <title>Bookshelf Apps</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+      <div class="head-img">
+        <img src="assets/logo.png" alt="logo Bookshelf">
+        <span><h1>Bookshelf Apps</h1></span>
+      </div>
+   
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Cari Buku">
+        <button type="button">Cari</button>
+      </div>  
+  </header>
+
+  <main>
+
+    <aside>
+      <div id="content">
+        <section class="card">  
+          <figure>
+            <img src="assets/pic-profile.jpg" alt="foto developer" class="pic-profile">
+            <figcaption><h3>Reza Fauzan Pratama</h3></figcaption>
+            <p style="color: grey; font-weight: 400;">Developer</p>
+          </figure>
+          <hr>
+          <h1>Jumlah Buku : </h1>
+          <h3 id="jumlahBuku">20</h3>
+        </section>
+      </div>
+
+      <div class="container">
+          <h2 class="container-header">Belum selesai dibaca</h2>
+
+          <div class="list-item" id="books">
+
+          </div>
+      </div>
+
+      <div class="container">
+        <h2 class="container-header">Selesai dibaca</h2>
+
+        <div class="list-item" id="complete-books">
+        </div>
+    </div>
+    </aside>
+
+    <div id="content">
+      <section class="card">
+        <h2>Selamat Datang di Bookshelf Apps</h2>
+        <p>Kelola Buku jadi lebih mudah hanya di Bookself Apps, Coba Sekarang !</p>
+      </section>
+
+      <section class="card">
+        <h2>Masukkan Buku Baru</h2>
+      
+        <form class="form" action="#" id="form">
+          <label for="judul">Judul:</label>
+          <input type="text" id="title" placeholder="Judul Buku" class="input-form" maxlength="120" pattern="^[a-zA-Z0-9_ ]*$" required >
+      
+          <label for="penulis">Penulis:</label>
+          <input type="text" id="author" placeholder="Author" class="input-form" maxlength="120" required>
+      
+          <label for="tahun">Tahun:</label>
+          <input type="number" id="year" class="input-form" min="1900" max="2026" placeholder="Tahun Terbit" required>
+      
+          <input type="checkbox" id="inputBookIsComplete" name="inputBookIsComplete">
+          <label for="inputBookIsComplete">Selesai Dibaca?</label>
+      
+          <button type="submit" id="save">Save</button>
+        </form>
+      </section>
+    </div>
+
+
+
+
+  </main>
+
+  <footer>
+    <p>Copyright &#169; Reza Fauzan Pratama. All right reserved</p>
+    <p>Made with <i class="fa fa-heart" style="color: red;"></i> & <i class="fa fa-coffee"></i> by My Self</p>
+</footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

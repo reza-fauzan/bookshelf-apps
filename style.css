@@ -1,0 +1,311 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, h4 {
+    color: #7073EE;
+}
+
+header {
+    background-color: #EF2346;
+    display: flex;
+    box-sizing: border-box !important;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    gap: 1rem;
+}
+
+.head-img {
+    display: flex;
+    align-items: center;
+}
+
+.head-img img {
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+
+}
+
+.head-img span h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search button {
+    background-color: #7073EE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 10px 15px 15px 15px;
+    display: flex;
+    gap: 1rem;
+}
+
+#content {
+    flex: 5;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+.card {
+    text-align: center;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+ul li {
+    list-style: none;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+aside {
+    flex: 3;
+    width: 100%;
+    align-items: center;
+}
+
+figure img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+form {
+    padding: 20px;
+    border: 1px solid  #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #7073EE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px;
+    color: #FABA26;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    display: flex;
+    margin-right: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.image-book {
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    background: transparent;
+    background-size: cover;
+    width: 130px;
+    border-radius: 11px;
+    box-sizing: border-box;
+    margin: 10px;
+    height: 100px !important;
+}
+
+.image-book img {
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 130px;
+    box-sizing: border-box;
+    transition: .3s ease;
+}
+
+.image-book img:hover {
+    transform: scale(1.1) rotate(3deg);
+  }
+  .detail-book {
+    width: 53% !important; 
+    padding: 5px;
+}
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h2 {
+    margin-bottom: unset;
+}
+
+.item > .inner p {
+    margin-top: 5px;
+}
+
+.shadow {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.check-button {
+    width: 48px;
+    height: 48px;
+
+    background: url('assets/button-check.png');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('assets/button-check-hover.png');
+    background-size: contain;
+}
+
+.trash-button {
+    width: 38px;
+    height: 38px;
+
+    background: url('assets/button-remove.png');
+    background-size: contain;
+    margin-left: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('assets/button-remove-hover.png');
+    background-size: contain;
+}
+
+.undo-button {
+    width: 38px;
+    height: 38px;
+
+    background: url('assets/button-undo.png');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('assets/button-undo-hover.png');
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+footer {
+    padding: 10px;
+    color: #fff;
+    background-color: #7073EE;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    aside main {
+        align-self: stretch;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .head-img span h1 {
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        visibility: hidden;
+    }
+
+    .head-img img {
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+        border-radius: 50%;
+
+    }
+
+    .search input[type="text"] {
+        width: 100px;
+    }
+
+    #content {
+        flex: 5;
+        display: flex;
+        justify-content: cen;
+        flex-flow: column nowrap;
+        width: 100%;
+        gap: 1rem 2rem;
+
+    }
+}
